@@ -1,0 +1,35 @@
+body {
+    background-color: #0a1015;
+    color: #e8dfcc;
+    font-size: 24px;
+}
+
+.mytitle{
+    color: #fefefe;
+    text-allign: center;
+    font-size: 48px;
+
+}
+
+
+.header {
+    background-image: url('fluffyCloudsNight.png'); /* replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* scales the image to cover the entire header */
+    background-position: center 15000px;/* centers the image */
+    padding: 50px; /* adds some padding around the header content */
+}
+
+.container {
+    display: flex; /* enables Flexbox */
+}
+
+.element {
+    flex: 1; /* makes both elements share the same width */
+    padding: 20px; /* adds some padding around the elements */
+}
+
+.rounded-image {
+    border-radius: 40%; /* rounds the image to a circle */
+    width: 500px; /* adjust the width as needed */
+    height: 600px; /* adjust the height as needed */
+}
