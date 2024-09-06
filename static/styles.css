@@ -1,21 +1,25 @@
 body {
     background-color: #0a1015;
     color: #e8dfcc;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .mytitle{
     color: #fefefe;
-    text-allign: center;
-    font-size: 48px;
-
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #1d3242,  
+         1px -1px 0 #1d3242,
+        -1px  1px 0 #1d3242,
+         1px  1px 0 #1d3242;
+    font-size: 3rem;
 }
 
 
 .header {
-    background-image: url('fluffyCloudsNight.png'); /* replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url('images/fluffyCloudsNight.png');
     background-size: cover; /* scales the image to cover the entire header */
-    background-position: center 15000px;/* centers the image */
+    background-position: 0 -350px;
     padding: 50px; /* adds some padding around the header content */
 }
 
