@@ -4,6 +4,10 @@ body {
     font-size: 1.5rem;
 }
 
+.footer-text {
+    color: #e8dfcc;
+}
+
 .mytitle{
     color: #fefefe;
     text-align: center;
@@ -15,6 +19,17 @@ body {
     font-size: 3rem;
 }
 
+.nav-link{
+    color: #e8dfcc;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nav-link:hover{
+    color: #ffae00;
+    text-align: center;
+    font-size: 1rem;
+}
 
 .header {
     background-image: url('images/fluffyCloudsNight.png');
@@ -23,17 +38,16 @@ body {
     padding: 50px; /* adds some padding around the header content */
 }
 
-.container {
-    display: flex; /* enables Flexbox */
-}
-
-.element {
-    flex: 1; /* makes both elements share the same width */
-    padding: 20px; /* adds some padding around the elements */
-}
-
 .rounded-image {
     border-radius: 40%; /* rounds the image to a circle */
     width: 500px; /* adjust the width as needed */
     height: 600px; /* adjust the height as needed */
+}
+
+.custom-hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, #e8dfcc 10%, #e8dfcc 90%, rgba(255, 255, 255, 0) 95%);
+    margin: 20px auto; /* Center the line and add vertical spacing */
+    width: 100%; /* Adjust the width as needed */
 }

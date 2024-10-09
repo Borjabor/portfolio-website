@@ -1,3 +1,6 @@
+Bootstrap_Flask
+Requests
+Werkzeug
 Flask
 flask_sqlalchemy
 SQLAlchemy
