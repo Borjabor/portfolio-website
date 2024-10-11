@@ -19,6 +19,14 @@ body {
     font-size: 3rem;
 }
 
+.text-contour {
+    text-shadow: 
+        -1px -1px 0 #1d3242,  
+         1px -1px 0 #1d3242,
+        -1px  1px 0 #1d3242,
+         1px  1px 0 #1d3242;
+}
+
 .nav-link{
     color: #e8dfcc;
     text-align: center;
@@ -32,10 +40,10 @@ body {
 }
 
 .header {
-    background-image: url('images/fluffyCloudsNight.png');
+    background-image: url('../images/fluffyCloudsNight.png');
     background-size: cover; /* scales the image to cover the entire header */
     background-position: 0 -350px;
-    padding: 50px; /* adds some padding around the header content */
+    padding: 75px; /* adds some padding around the header content */
 }
 
 .rounded-image {
@@ -51,3 +59,11 @@ body {
     margin: 20px auto; /* Center the line and add vertical spacing */
     width: 100%; /* Adjust the width as needed */
 }
+
+.project-preview .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-preview .card:hover {
+    transform: scale(1.05);
+  }
