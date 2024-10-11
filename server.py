@@ -23,11 +23,6 @@ class Project(db.Model):
     
 with app.app_context():
     db.create_all()
-    update = db.session.execute(db.select(Project).where(Project.id == 2)).scalar()
-    update.thumbnail = 'static/images/CheeseCalibur_Cover.png'
-    update = db.session.execute(db.select(Project).where(Project.id == 3)).scalar()
-    update.thumbnail = 'static/images/GearShiftCover.png'
-    db.session.commit()
     
     
 @app.route('/')
