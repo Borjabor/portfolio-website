@@ -18,19 +18,9 @@ class Project(db.Model):
     title: Mapped[str] = mapped_column(String(100), nullable=False)
     summary: Mapped[str] = mapped_column(String(250), nullable=False)
     thumbnail: Mapped[str] = mapped_column(String(250), nullable=False)
-    # images: Mapped[list["Image"]] = relationship("Image", backref="project", lazy=True)
-    # videos: Mapped[list["Video"]] = relationship("Video", backref="project", lazy=True)
-
-class Image(db.Model):
-    id: Mapped[int] = mapped_column(primary_key=True)
-    project_id: Mapped[int] = mapped_column(Integer, ForeignKey("project.id"), nullable=False)
-    url: Mapped[str] = mapped_column(String(250), nullable=False)
-
-class Video(db.Model):
-    id: Mapped[int] = mapped_column(primary_key=True)
-    project_id: Mapped[int] = mapped_column(Integer, ForeignKey("project.id"), nullable=False)
-    url: Mapped[str] = mapped_column(String(250), nullable=False)
-
+    # url for project link
+    
+    
 with app.app_context():
     db.create_all()
     
