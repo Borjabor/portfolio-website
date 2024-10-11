@@ -4,3 +4,4 @@ Werkzeug
 Flask
 flask_sqlalchemy
 SQLAlchemy
+gunicorn
